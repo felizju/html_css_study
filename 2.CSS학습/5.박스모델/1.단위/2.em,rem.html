@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em,rem</title>
+    <style>
+        html{
+            font-size: 10px; /* 지정하지 않아도 기본 설정됨 16px */
+        }
+        body{
+            font-size: 16px;
+        }
+        body *{
+            border: 2px solid #000;
+        }
+        .container{
+            width: 60rem; /* 60em == 600px */
+            font-size: 10px;
+        }
+        .parent{
+            width: 50%;
+            font-size: 1.3em; /* conatiner에서 상속받은 10px*1.3배 */
+        }
+        .child{
+            width: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- .container>.parent>.child*2 -->
+    <div class="container">Container
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

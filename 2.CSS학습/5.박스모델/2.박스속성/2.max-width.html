@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>max-width</title>
+    <style>
+        .parent{
+            width: 100px;
+            height: 300px;
+            border: 4px solid blue;
+            margin: 20px;
+        }
+
+        .child{
+            max-width: 400px; /* max-width 이므로 부모 길이와 같이 줄어듬 */
+            min-width: 200px;
+            height: 200px;
+            background: orange;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+    
+</body>
+</html>

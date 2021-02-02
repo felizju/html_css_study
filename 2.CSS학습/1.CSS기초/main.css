@@ -1,4 +1,5 @@
 
+/* @import url("경로") --> url 생략 가능 */
 @import "side.css";
 
 h1, p{
