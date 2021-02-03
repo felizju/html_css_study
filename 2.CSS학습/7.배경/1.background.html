@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        .box{
+            width: 550px;
+            height: 350px;
+            border: 2px dashed gray;
+            /* background-color: yellow;
+            background-image: url(./images/sky.jpg);
+            background-size: 200px;
+            background-repeat: no-repeat;
+            background-position: center 100px; 
+            background-size: cover; */
+
+            /* 50px/50px (앞:사이즈 / 뒤:포지션) 구분하기 */
+            background: yellow url('./images/sky.jpg') no-repeat center 50px / cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+
+</body>
+</html>
