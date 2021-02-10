@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 4px solid #000;
+            display: flex;
+        }
+        .container .item{
+            width: 150px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-size: 15px;
+
+            /*
+            flex-basis: 0;  /* flex-basis 지정하면 width 무시함 */
+            /* flex-grow: 1;  basis를 0으로 빼야 지정된 숫자로 정확하게 분할된다. */
+        
+            flex: 1;
+        }
+        .container .item.item3{
+            /* flex-grow: 2; */
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item item1">Good job!</div>
+        <div class="item item2">Aay</div>
+        <div class="item item3">Hello World!</div>
+    </div>
+    
+</body>
+</html>
