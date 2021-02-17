@@ -33,13 +33,12 @@
         }
 
         .absolute {
-            /* absolute사용하려면 조상요소에 position 요소 줘야 함
-            없으면 전체 뷰포트 기준으로 움직임 (body기준) */
             position: absolute;
             bottom: 50px;
             right: 10px;
         }
         .fixed {
+            /* header 부분 네비게이션 fixed 사용 */
             position: fixed;
             bottom: 50px;
             right: 10px;
@@ -52,7 +51,7 @@
     <div class="grandparent">
         <div class="parent">
             <div class="child absolute">1</div>
-            <div class="child fixed">2</div> <!-- 2번에도 absolute를 주면 서로 겹치게 된다.-->
+            <div class="child fixed">2</div>
             <div class="child">3</div>
         </div>
     </div>

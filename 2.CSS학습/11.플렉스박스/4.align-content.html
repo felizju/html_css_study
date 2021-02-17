@@ -13,11 +13,11 @@
             flex-flow: row wrap;
             /* align-content일 때 no-wrap이면 x
             item의 height가 auto여야 stretch 적용됨 */
-            align-content: space-between;
+            align-content: stretch;
         }
         .item{
             width: 150px;
-            height: 100px;  /* stretch시 auto로 지정 */
+            height: auto;  /* stretch시 auto로 지정 */
             background: red;
             border: 4px dashed orange;
             border-radius: 10px;
