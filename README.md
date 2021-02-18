@@ -6,6 +6,7 @@
 4. auto rename tag - tag name 자동 변경 <></>
 5. material icon theme - 아이콘테마
 6. beautify - 자동 줄 맞춤 
+7. Bracket Pair Colorizer - pair 컬러
 
 ## 폰트 글꼴 확대 단축키 설정법
 1. 파일 -> 기본설정 -> 바로가기 키 -> 글꼴 검색 -> 단축키 지정
