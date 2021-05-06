@@ -14,18 +14,21 @@
             font-size: 30px;
         }
         .relative{
-            /* relative : 다른박스에 영향 주지 않는다. */
+            /* position: relative;는 다른박스에 영향 주지 않는다. */
             position: relative;
             left: 70px;
             top: 50px;
         }
         .absolute{
+            /* position: absolute;는 다른박스에 영향준다. */
             position: absolute;
             /* right: 30px;
             top: 70px; */
-            /* z-index: -10; */
-        }
 
+            /* z-index: -10;를 0아래로 주면 겹쳐 있는 박스가 올라오고,
+            z-index: 10;를 0위로 주면 겹쳐 있는 박스가 아래로 내려간다.  */
+            z-index: -10;
+        }
     </style>
 </head>
 <body>

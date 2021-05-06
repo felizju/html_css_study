@@ -8,15 +8,14 @@
         .eco{
             color: red;
             font-size: 30px;
-
         }
+        /* plant 클래스 이후의 모든 속성들에 스타일 적용됨(상속) */
         .eco .plant{
             font-size: 15px;
         }
     </style>
 </head>
 <body>
-
     <!-- .eco>.animal+.plant>div*3 -->
     <div class="eco">생태계
         <div class="animal">동물</div>
@@ -26,6 +25,5 @@
             <div>소나무</div>
         </div>
     </div>
-
 </body>
 </html>

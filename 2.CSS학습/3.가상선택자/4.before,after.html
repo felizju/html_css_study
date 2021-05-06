@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>수도 클래스 선택자</title>
     <style>
+        /* before, after 는 content 속성이 필수!!! */
         ul li::before{
             content: '번호 :';
             font-weight: bold;
             color: red;
             margin-right: 20px;
         }
-
+        /* before, after 는 content 속성이 필수!!! */
         ul li::after{
-            /* before, after 는 content 속성이 필수!!! */
             content: '';
             width: 10px;
             height: 10px;
@@ -21,15 +21,6 @@
             border-radius: 50%; /* 원으로 변경 */
             display: inline-block;
         }
-
-        
-
-
-    </style>
-    <style>
-
-
-
     </style>
 </head>
 <body>

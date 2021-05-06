@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +11,13 @@
             border: 4px dashed gray;
             padding: 100px;
         }
-
         .parent {
             width: 400px;
             height: 300px;
             border: 4px dashed lightgray;
-
+            
             position: relative; /* absolute 사용을 위해 임의로 요소 지정 */
         }
-
         .child {
             width: 120px;
             height: 80px;
@@ -29,7 +26,6 @@
             border-radius: 10px;
             font-size: 30px;
         }
-
         .absolute {
             /* absolute사용하려면 조상요소에 position 요소 줘야 함
             없으면 전체 뷰포트 기준으로 움직임 (body기준) */
@@ -39,7 +35,6 @@
         }
     </style>
 </head>
-
 <body>
 
     <!-- .grandparent>.parent>.child{$}*3 -->
@@ -52,5 +47,4 @@
     </div>
 
 </body>
-
 </html>
